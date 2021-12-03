@@ -1,0 +1,124 @@
+@import url("http://fonts.cdnfonts.com/css/dust-west");
+@import url("http://fonts.cdnfonts.com/css/rockstar");
+@import url("http://fonts.cdnfonts.com/css/arial");
+@import url("http://fonts.cdnfonts.com/css/verdana");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  background-color: #0c618a;
+}
+
+.c-header {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #0c4663;
+  color: white;
+  font-family: "Dust West", sans-serif;
+  background-image: url("../Images/Desktop/Backgroundlogo.png");
+  background-size: 18rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.c-header__title {
+  margin-top: 0.5rem;
+  font-size: 4rem;
+}
+
+.c-nav {
+  margin-left: 2rem;
+}
+
+.c-nav__search {
+  border: none;
+}
+
+.c-nav li {
+  margin-left: 2rem;
+}
+
+.c-nav__link {
+  text-decoration: none;
+  font-family: "Arial Black", sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
+.c-nav__link:hover {
+  color: #e3f5ff;
+}
+
+.c-banner {
+  font-family: "Dust West", sans-serif;
+  color: white;
+  background-image: url("../Images/Desktop/Dilude (2).png");
+  padding: 10rem 0;
+  width: auto;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+}
+
+.c-banner__item {
+  text-align: center;
+}
+
+.c-banner__title {
+  font-family: "Dust West", sans-serif;
+  font-size: 6rem;
+  padding-bottom: 5rem;
+}
+
+.c-banner__btn {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Arial Black", sans-serif;
+  background-color: #1474a4;
+  padding: 1rem;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 6px 6px #1474a4;
+          box-shadow: 0px 0px 6px 6px #1474a4;
+}
+
+.c-banner__btn:hover {
+  color: #e3f5ff;
+  -webkit-box-shadow: 0px 0px 6px 6px #0c4663;
+          box-shadow: 0px 0px 6px 6px #0c4663;
+  background-color: #0c4663;
+}
+
+.c-features {
+  background-color: hotpink;
+  margin-top: 3rem;
+}
+
+.c-features__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+}
+
+.c-features__title {
+  font-family: "Rockstar", sans-serif;
+  font-size: 3rem;
+  color: #0c4663;
+}
+
+.c-features__text {
+  font-family: "Verdana", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.u-hotpink {
+  background-color: hotpink;
+}

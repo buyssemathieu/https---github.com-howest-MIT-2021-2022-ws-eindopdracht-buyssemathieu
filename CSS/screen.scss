@@ -1,0 +1,161 @@
+@import url("http://fonts.cdnfonts.com/css/dust-west");
+@import url("http://fonts.cdnfonts.com/css/rockstar");
+@import url("http://fonts.cdnfonts.com/css/arial");
+@import url("http://fonts.cdnfonts.com/css/verdana");
+
+//------------------------------------------------------//
+//SETTINGS//
+//------------------------------------------------------//
+$color-darkblue: rgb(12, 70, 99);
+$color-lighterblue: rgb(12, 97, 138);
+$color-buyitnow: rgb(20, 116, 164);
+$color-lightblue: rgb(29, 169, 240);
+$color-extremelightblue: rgb(227, 245, 255);
+$color-typesblue: rgb(21, 124, 176);
+$color-white: rgb(255, 255, 255);
+
+$maintitle-font-family: "Dust West", sans-serif;
+$subtitle-font-family: "Rockstar", sans-serif;
+$heading-font-family: "Arial Black", sans-serif;
+$text-font-family: "Verdana", sans-serif;
+
+$spacing-default: 2rem;
+//------------------------------------------------------//
+//TOOLS//
+//------------------------------------------------------//
+
+//------------------------------------------------------//
+//GENERIC//
+//------------------------------------------------------//
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+//------------------------------------------------------//
+//ELEMENTS//
+//------------------------------------------------------//
+nav {
+  background-color: $color-lighterblue;
+}
+//------------------------------------------------------//
+//OBJECTS//
+//------------------------------------------------------//
+
+//------------------------------------------------------//
+//COMPONENTS//
+//------------------------------------------------------//
+.c-header {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: $color-darkblue;
+  color: $color-white;
+  font-family: $maintitle-font-family;
+  background-image: url("../Images/Desktop/Backgroundlogo.png");
+  background-size: 18rem;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__item {
+  }
+  &__title {
+    margin-top: 0.5rem;
+    font-size: 4rem;
+  }
+}
+
+.c-nav {
+  margin-left: $spacing-default;
+  
+  &__search {
+    border: none;
+  }
+
+  li {
+    margin-left: $spacing-default;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: $heading-font-family;
+    color: $color-white;
+    font-size: 1rem;
+    &:hover {
+      color: $color-extremelightblue;
+    }
+  }
+}
+.c-banner {
+  font-family: $maintitle-font-family;
+  color: $color-white;
+
+  background-image: url("../Images/Desktop/Dilude\ \(2\).png");
+  padding: 10rem 0;
+  width: auto;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+
+  &__item {
+    text-align: center;
+  }
+  &__title {
+    font-family: $maintitle-font-family;
+    font-size: 6rem;
+    padding-bottom: 5rem;
+  }
+  &__btn {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: $heading-font-family;
+
+    background-color: $color-buyitnow;
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 6px $color-buyitnow;
+
+    &:hover {
+      color: $color-extremelightblue;
+      box-shadow: 0px 0px 6px 6px $color-darkblue;
+      background-color: $color-darkblue;
+    }
+  }
+}
+
+.c-features {
+  background-color: hotpink;
+  margin-top: 3rem;
+  &__item {
+    align-items: center;
+    width: auto;
+  }
+  &__title {
+    font-family: $subtitle-font-family;
+    font-size: 3rem;
+    color: $color-darkblue;
+  }
+  &__text {
+    font-family: $text-font-family;
+
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+// .c-types {
+//   background-color: $color-typesblue;
+//   text-align: center;
+//   color: white;
+
+//   &__title {
+//   }
+// }
+
+//------------------------------------------------------//
+//bootstrap//
+//------------------------------------------------------//
+
+//------------------------------------------------------//
+//UTILITIES//
+//------------------------------------------------------//
+.u-hotpink{background-color: hotpink;}
