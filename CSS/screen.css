@@ -25,6 +25,10 @@ nav {
   background-repeat: no-repeat;
 }
 
+.c-header__item {
+  color: white;
+}
+
 .c-header__title {
   margin-top: 0.5rem;
   font-size: 4rem;
@@ -32,10 +36,6 @@ nav {
 
 .c-nav {
   margin-left: 2rem;
-}
-
-.c-nav__search {
-  border: none;
 }
 
 .c-nav li {
@@ -56,7 +56,7 @@ nav {
 .c-banner {
   font-family: "Dust West", sans-serif;
   color: white;
-  background-image: url("../Images/Desktop/Dilude (2).png");
+  background-image: url("../Images/Desktop/Dilude.png");
   padding: 10rem 0;
   width: auto;
   background-position: center;
@@ -96,15 +96,10 @@ nav {
 }
 
 .c-features {
-  background-color: hotpink;
-  margin-top: 3rem;
-}
-
-.c-features__item {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: auto;
+  background-color: #e3f5ff;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-right: 2rem;
 }
 
 .c-features__title {
@@ -115,10 +110,50 @@ nav {
 
 .c-features__text {
   font-family: "Verdana", sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 2rem;
   text-align: center;
 }
 
-.u-hotpink {
+.c-cta {
   background-color: hotpink;
+  background-image: url("../Images/Desktop/BackgroundCTA.png");
+  padding: 6rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.c-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.c-footer__phone {
+  text-align: right;
+}
+
+.card {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.c-card__title {
+  font-family: "Dust West", sans-serif;
+  font-size: 5rem;
+}
+/*# sourceMappingURL=screen.css.map */

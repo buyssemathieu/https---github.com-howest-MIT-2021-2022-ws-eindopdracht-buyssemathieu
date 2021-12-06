@@ -38,6 +38,7 @@ $spacing-default: 2rem;
 nav {
   background-color: $color-lighterblue;
 }
+
 //------------------------------------------------------//
 //OBJECTS//
 //------------------------------------------------------//
@@ -57,6 +58,7 @@ nav {
   background-repeat: no-repeat;
 
   &__item {
+    color: white;
   }
   &__title {
     margin-top: 0.5rem;
@@ -65,11 +67,9 @@ nav {
 }
 
 .c-nav {
-  margin-left: $spacing-default;
   
-  &__search {
-    border: none;
-  }
+  
+  margin-left: $spacing-default;
 
   li {
     margin-left: $spacing-default;
@@ -83,12 +83,15 @@ nav {
       color: $color-extremelightblue;
     }
   }
+  
+
 }
+
 .c-banner {
   font-family: $maintitle-font-family;
   color: $color-white;
 
-  background-image: url("../Images/Desktop/Dilude\ \(2\).png");
+  background-image: url("../Images/Desktop/Dilude.png");
   padding: 10rem 0;
   width: auto;
   background-position: center; /* Center the image */
@@ -123,12 +126,11 @@ nav {
 }
 
 .c-features {
-  background-color: hotpink;
-  margin-top: 3rem;
-  &__item {
-    align-items: center;
-    width: auto;
-  }
+  background-color: $color-extremelightblue;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-right: 2rem;
+
   &__title {
     font-family: $subtitle-font-family;
     font-size: 3rem;
@@ -136,9 +138,35 @@ nav {
   }
   &__text {
     font-family: $text-font-family;
-
+    
+    align-items: center;
     font-size: 2rem;
     text-align: center;
+  }
+}
+
+.c-cta{
+  background-color: hotpink;
+  background-image: url("../Images/Desktop/BackgroundCTA.png");
+  padding: 6rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  
+
+}
+.c-footer{
+  
+  &__list{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    justify-content: space-around;
+  }    
+  
+  &__phone{
+    text-align: right;
   }
 }
 
@@ -154,8 +182,21 @@ nav {
 //------------------------------------------------------//
 //bootstrap//
 //------------------------------------------------------//
+.card{
+  background-color: transparent;
+  border-color: transparent;
+  color: $color-white;
+  &__link{
+    text-decoration: none;
+  }
 
+}
+.c-card__title{
+  font-family: $maintitle-font-family;
+  font-size: 5rem;
+  
+}
 //------------------------------------------------------//
 //UTILITIES//
 //------------------------------------------------------//
-.u-hotpink{background-color: hotpink;}
+// .u-hotpink{background-color: hotpink;}

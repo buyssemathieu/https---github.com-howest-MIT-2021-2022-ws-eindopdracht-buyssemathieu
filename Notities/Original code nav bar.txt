@@ -1,0 +1,30 @@
+    <nav>
+      <div class="container c-container">
+        <div class="row">
+          <div class="navbar navbar-expand-sm navbar-dark">
+            <a class="navbar-brand" href="#">
+              <div class="d-inline-block align-top"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse u-hotpink justify-content-space-betweeen" id="toggleMobileMenu">
+              <ul class="c-nav navbar-nav">
+                <li>
+                  <a class="c-nav__link" href="types.html#products">Products</a>
+                </li>
+                <li>
+                  <a class="c-nav__link" href="support.html#snoozerservice">Support</a>
+                </li>
+                <li>
+                  <a class="c-nav__link" href="support.html#snoozersupport">About us</a>
+                </li>
+              </ul>
+              <form class="form-inline">
+                <input type="text" placeholder="Search" class="c-nav__search" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>

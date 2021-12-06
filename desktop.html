@@ -40,8 +40,12 @@
                 <li>
                   <a class="c-nav__link" href="support.html#snoozersupport">About us</a>
                 </li>
-                <li class="align-self-end">
-                  <input type="text" placeholder="Search" class="c-nav__search" />
+            
+                <li>
+                  <input class="c-nav__text" type="search" placeholder="Search">
+                </li>
+                <li>
+                  <button type="button" class="c-button btn btn-primary">Search</button>
                 </li>
               </ul>
             </div>
@@ -62,10 +66,10 @@
     <section class="c-features">
       <div class="container">
         <div class="row">
-          <div class="c-features__item ms-auto col-lg-6 col-sm-12">
+          <div class="c-features__item col-lg-6 col-md-12">
             <img src="images/Desktop/vacuum.png" width="631" height="451" alt="Vacuum" />
           </div>
-          <div class="c-features__text col-lg-6 col-sm-12 text-center">
+          <div class="c-features__text col-lg-6 col-md-12">
             <h2 class="c-features__title">Snoozer</h2>
             <h2 class="c-features__title">3000K</h2>
             <p>Tri-activ brush</p>
@@ -78,42 +82,54 @@
     </section>
     <section class="c-cta">
       <div class="container">
-        <div class="row">
-          <div class="c-cta__item">
-            <ul class="c-cta__list">
-              <li class="c-cta__listitem">
-                <a href="types.html#cordless ">Cordless</a>
-                <a href="types.html#cordless "><img src="images/Desktop/Cordlessbackground.png" width="203" height="297" alt="Cordless" /></a>
-              </li>
-              <li class="c-cta__listitem">
-                <a href="types.html#robot">Robot</a>
-                <a href="types.html#robot"><img src="images/Desktop/RobotBackground.png" alt="Robot" /></a>
-              </li>
-              <li class="c-cta__listitem">
-                <a href="types.html#vacuum">Vacuum</a>
-                <a href="types.html#vacuum"><img src="images/Desktop/VacuumBackground.png" alt="Robot" /></a>
-              </li>
-            </ul>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
+            <div class="card c-card c-cta__item text-center">
+              <h3 class="c-card__title">Cordless</h3>
+              <div class="c-testimonial__item">
+                <a href="types.html#cordless"><img src="Images/Desktop/Cordlessbackground.png" width="203" height="297" alt="Cordless background"></a>
+
+              </div>
+            </div>
           </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
+            <div class="card c-card c-cta__item ">
+              <h3 class="c-card__title text-center">Robot</h3>
+              <div class="c-testimonial__item">
+                <a href="types.html#robot"><img src="Images/Desktop/RobotBackground.png" width="203" height="297" alt="Robot Background"></a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch justify-content-center">
+            <div class="card c-card c-cta__item text-center">
+              <h3 class="c-card__title">Vacuum</h3>
+              <div class="c-testimonial__item">
+                <a href="types.html#vacuum"><img src="Images/Desktop/VacuumBackground.png" width="203" height="297" alt="Vacuum Background"></a>
+
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>
     <footer class="c-footer">
       <div class="container">
         <div class="row">
-          <div class="c-footer__item">
-            <ul class="c-footer__list">
-              <li class="c-footer__listitem">
-                <a href="types.html#snoozertypes">Products</a>
-              </li>
-              <li class="c-footer__listitem">
-                <a href="support.html#snoozersupport">About us</a>
-              </li>
-              <li class="c-footer__listitem">
-                <a href="support.html#snoozerservice">Support</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="c-footer__list col-lg-3">
+            <li class="c-footer__listitem ">
+              <a href="types.html#snoozertypes">Products</a>
+            </li>
+            <li class="c-footer__listitem ">
+              <a href="support.html#snoozersupport">About us</a>
+            </li>
+            <li class="c-footer__listitem ">
+              <a href="support.html#snoozerservice">Support</a>
+            </li>
+          </ul>
+
           <div class="c-footer__phone">
             <p>Tel: 0123/5/67/89</p>
             <p>Email: snoozer@gmail.com</p>
@@ -123,6 +139,7 @@
           </div>
         </div>
       </div>
+      
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>

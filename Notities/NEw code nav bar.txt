@@ -1,0 +1,25 @@
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container c-container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="c-nav navbar-nav ">
+            <li>
+              <a href="types.html#products" class="c-nav__link">Products</a>
+            </li>
+            <li>
+              <a class="c-nav__link" href="support.html#snoozersupport">Support</a>
+            </li>
+            <li>
+              <a href="AboutUs.html#aboutus" class="c-nav__link">About Us</a>
+            </li>
+          </ul>
+          <form class="form-inline d-flex ">
+            <input type="search" placeholder="Search" aria-label="Search" class="c-nav__search" />
+            <button class="c-nav__search c-nav__b" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
