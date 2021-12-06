@@ -13,6 +13,15 @@ nav {
   background-color: #0c618a;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #e3f5ff;
+}
+
 .c-header {
   text-align: center;
   padding: 0.5rem;
@@ -126,6 +135,13 @@ nav {
   background-repeat: no-repeat;
 }
 
+.c-footer {
+  color: white;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  background-color: #0c618a;
+}
+
 .c-footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,13 +158,21 @@ nav {
   text-align: right;
 }
 
-.card {
+.c-footer__logo {
+  background-image: url("../Images/Desktop/Backgroundlogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 35rem;
+  text-align: center;
+}
+
+.c-card__desktop {
   background-color: transparent;
   border-color: transparent;
   color: white;
 }
 
-.card__link {
+.c-card__link {
   text-decoration: none;
 }
 

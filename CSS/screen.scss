@@ -28,17 +28,24 @@ $spacing-default: 2rem;
 //GENERIC//
 //------------------------------------------------------//
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 //------------------------------------------------------//
 //ELEMENTS//
 //------------------------------------------------------//
 nav {
-  background-color: $color-lighterblue;
+	background-color: $color-lighterblue;
 }
 
+a {
+	text-decoration: none;
+	color: $color-white;
+	&:hover {
+		color: $color-extremelightblue;
+	}
+}
 //------------------------------------------------------//
 //OBJECTS//
 //------------------------------------------------------//
@@ -47,127 +54,132 @@ nav {
 //COMPONENTS//
 //------------------------------------------------------//
 .c-header {
-  text-align: center;
-  padding: 0.5rem;
-  background-color: $color-darkblue;
-  color: $color-white;
-  font-family: $maintitle-font-family;
-  background-image: url("../Images/Desktop/Backgroundlogo.png");
-  background-size: 18rem;
-  background-position: center;
-  background-repeat: no-repeat;
+	text-align: center;
+	padding: 0.5rem;
+	background-color: $color-darkblue;
+	color: $color-white;
+	font-family: $maintitle-font-family;
+	background-image: url("../Images/Desktop/Backgroundlogo.png");
+	background-size: 18rem;
+	background-position: center;
+	background-repeat: no-repeat;
 
-  &__item {
-    color: white;
-  }
-  &__title {
-    margin-top: 0.5rem;
-    font-size: 4rem;
-  }
+	&__item {
+		color: white;
+	}
+	&__title {
+		margin-top: 0.5rem;
+		font-size: 4rem;
+	}
 }
 
 .c-nav {
-  
-  
-  margin-left: $spacing-default;
+	margin-left: $spacing-default;
 
-  li {
-    margin-left: $spacing-default;
-  }
-  &__link {
-    text-decoration: none;
-    font-family: $heading-font-family;
-    color: $color-white;
-    font-size: 1rem;
-    &:hover {
-      color: $color-extremelightblue;
-    }
-  }
-  
-
+	li {
+		margin-left: $spacing-default;
+	}
+	&__link {
+		text-decoration: none;
+		font-family: $heading-font-family;
+		color: $color-white;
+		font-size: 1rem;
+		&:hover {
+			color: $color-extremelightblue;
+		}
+	}
 }
 
 .c-banner {
-  font-family: $maintitle-font-family;
-  color: $color-white;
+	font-family: $maintitle-font-family;
+	color: $color-white;
 
-  background-image: url("../Images/Desktop/Dilude.png");
-  padding: 10rem 0;
-  width: auto;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+	background-image: url("../Images/Desktop/Dilude.png");
+	padding: 10rem 0;
+	width: auto;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
 
-  &__item {
-    text-align: center;
-  }
-  &__title {
-    font-family: $maintitle-font-family;
-    font-size: 6rem;
-    padding-bottom: 5rem;
-  }
-  &__btn {
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
-    font-family: $heading-font-family;
+	&__item {
+		text-align: center;
+	}
+	&__title {
+		font-family: $maintitle-font-family;
+		font-size: 6rem;
+		padding-bottom: 5rem;
+	}
+	&__btn {
+		color: white;
+		text-decoration: none;
+		font-size: 2rem;
+		font-family: $heading-font-family;
 
-    background-color: $color-buyitnow;
-    padding: 1rem;
-    border-radius: 50px;
-    box-shadow: 0px 0px 6px 6px $color-buyitnow;
+		background-color: $color-buyitnow;
+		padding: 1rem;
+		border-radius: 50px;
+		box-shadow: 0px 0px 6px 6px $color-buyitnow;
 
-    &:hover {
-      color: $color-extremelightblue;
-      box-shadow: 0px 0px 6px 6px $color-darkblue;
-      background-color: $color-darkblue;
-    }
-  }
+		&:hover {
+			color: $color-extremelightblue;
+			box-shadow: 0px 0px 6px 6px $color-darkblue;
+			background-color: $color-darkblue;
+		}
+	}
 }
 
 .c-features {
-  background-color: $color-extremelightblue;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-  padding-right: 2rem;
+	background-color: $color-extremelightblue;
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+	padding-right: 2rem;
 
-  &__title {
-    font-family: $subtitle-font-family;
-    font-size: 3rem;
-    color: $color-darkblue;
-  }
-  &__text {
-    font-family: $text-font-family;
-    
-    align-items: center;
-    font-size: 2rem;
-    text-align: center;
-  }
+	&__title {
+		font-family: $subtitle-font-family;
+		font-size: 3rem;
+		color: $color-darkblue;
+	}
+	&__text {
+		font-family: $text-font-family;
+
+		align-items: center;
+		font-size: 2rem;
+		text-align: center;
+	}
 }
 
-.c-cta{
-  background-color: hotpink;
-  background-image: url("../Images/Desktop/BackgroundCTA.png");
-  padding: 6rem;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  
-  
-
+.c-cta {
+	background-color: hotpink;
+	background-image: url("../Images/Desktop/BackgroundCTA.png");
+	padding: 6rem;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-.c-footer{
-  
-  &__list{
-    display: flex;
-    justify-content: left;
-    list-style-type: none;
-    justify-content: space-around;
-  }    
-  
-  &__phone{
-    text-align: right;
-  }
+.c-footer {
+	color: $color-white;
+	font-size: 1.2rem;
+	padding-top: 1rem;
+	background-color: $color-lighterblue;
+	&__listitem {
+	}
+	&__list {
+		display: flex;
+		justify-content: left;
+		list-style-type: none;
+		justify-content: space-around;
+	}
+
+	&__phone {
+		text-align: right;
+	}
+	&__logo {
+		background-image: url("../Images/Desktop/Backgroundlogo.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-x: 35rem;
+		text-align: center;
+	}
 }
 
 // .c-types {
@@ -182,19 +194,20 @@ nav {
 //------------------------------------------------------//
 //bootstrap//
 //------------------------------------------------------//
-.card{
-  background-color: transparent;
-  border-color: transparent;
-  color: $color-white;
-  &__link{
-    text-decoration: none;
-  }
+.c-card {
+	&__desktop {
+		background-color: transparent;
+		border-color: transparent;
+		color: $color-white;
+	}
 
+	&__link {
+		text-decoration: none;
+	}
 }
-.c-card__title{
-  font-family: $maintitle-font-family;
-  font-size: 5rem;
-  
+.c-card__title {
+	font-family: $maintitle-font-family;
+	font-size: 5rem;
 }
 //------------------------------------------------------//
 //UTILITIES//
