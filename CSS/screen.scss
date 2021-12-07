@@ -216,6 +216,7 @@ a {
     border-radius: .9375rem;
     padding: 0 0.5rem;
     margin: 1rem 0rem;
+
   }
   &__thumbnail{
     border: none;
@@ -223,9 +224,15 @@ a {
   }
   &__button{
     color: $color-white;
-    background-color: $color-darkblue;
+    background-color: $color-lighterblue;
   }
+
+	&:hover{
+		background-color: $color-darkblue;
+	}
+
 }
+
 .c-card__title {
 	font-family: $maintitle-font-family;
 	font-size: 5rem;
