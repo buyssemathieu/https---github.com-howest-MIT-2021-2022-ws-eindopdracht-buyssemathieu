@@ -195,6 +195,33 @@ a {
   }
 
 }
+.c-klachtendienst{
+	&__img{
+		margin-top: $spacing-default;
+		min-height: 30rem;
+		background-size: cover;
+		background-position: center center;
+		&--bg1{
+			background-image: url("../Images/Support/depositphotos_19510913-stock-photo-choices-of-a-businessman.png");
+		}
+		&--bg2{
+			background-image: url("../Images/Support/snoozer\ service.png");
+		}
+		&--bg3{
+			background-image: url("../Images/Support/Kaart.png");
+		}
+	}
+
+	&__text{
+		padding: 3rem;
+		margin: auto 0;
+		font-family: $text-font-family;
+		
+		&__titel{
+			color:white;
+		}
+	}
+}
 
 //------------------------------------------------------//
 //bootstrap//

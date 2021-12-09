@@ -186,6 +186,35 @@ a:hover {
   font-family: "Rockstar", sans-serif;
 }
 
+.c-klachtendienst__img {
+  margin-top: 2rem;
+  min-height: 30rem;
+  background-size: cover;
+  background-position: center center;
+}
+
+.c-klachtendienst__img--bg1 {
+  background-image: url("../Images/Support/depositphotos_19510913-stock-photo-choices-of-a-businessman.png");
+}
+
+.c-klachtendienst__img--bg2 {
+  background-image: url("../Images/Support/snoozer service.png");
+}
+
+.c-klachtendienst__img--bg3 {
+  background-image: url("../Images/Support/Kaart.png");
+}
+
+.c-klachtendienst__text {
+  padding: 3rem;
+  margin: auto 0;
+  font-family: "Verdana", sans-serif;
+}
+
+.c-klachtendienst__text__titel {
+  color: white;
+}
+
 .c-card__desktop {
   background-color: transparent;
   border-color: transparent;
