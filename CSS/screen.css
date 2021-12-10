@@ -291,6 +291,10 @@ a:hover {
   text-align: center;
 }
 
+.c-form {
+  margin-top: 2rem;
+}
+
 .c-card__desktop {
   background-color: transparent;
   border-color: transparent;
