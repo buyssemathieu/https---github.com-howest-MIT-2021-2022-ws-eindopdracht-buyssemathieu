@@ -28,26 +28,24 @@ $spacing-default: 2rem;
 //GENERIC//
 //------------------------------------------------------//
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 //------------------------------------------------------//
 //ELEMENTS//
 //------------------------------------------------------//
 nav {
-	background-color: $color-lighterblue;
+  background-color: $color-lighterblue;
 }
 
 a {
-	text-decoration: none;
-	color: $color-white;
-	&:hover {
-		color: $color-extremelightblue;
-	}
+  text-decoration: none;
+  color: $color-white;
+  &:hover {
+    color: $color-extremelightblue;
+  }
 }
-
-
 
 //------------------------------------------------------//
 //OBJECTS//
@@ -57,271 +55,264 @@ a {
 //COMPONENTS//
 //------------------------------------------------------//
 .c-header {
-	text-align: center;
-	padding: 0.5rem;
-	background-color: $color-darkblue;
-	color: $color-white;
-	font-family: $maintitle-font-family;
-	background-image: url("../Images/Desktop/Backgroundlogo.png");
-	background-size: 18rem;
-	background-position: center;
-	background-repeat: no-repeat;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: $color-darkblue;
+  color: $color-white;
+  font-family: $maintitle-font-family;
+  background-image: url("../Images/Desktop/Backgroundlogo.png");
+  background-size: 18rem;
+  background-position: center;
+  background-repeat: no-repeat;
 
-	&__item {
-		color: white;
-	}
-	&__title {
-		margin-top: 0.5rem;
-		font-size: 4rem;
-	}
+  &__item {
+    color: white;
+  }
+  &__title {
+    margin-top: 0.5rem;
+    font-size: 4rem;
+  }
 }
 
 .c-nav {
-	margin-left: $spacing-default;
-	align-items: center;
-	&__item {
-		margin-left: $spacing-default;
-		&:last-child{
-			margin-left: 0.5rem;	
-		}
-	}
-	&__link {
-		text-decoration: none;
-		font-family: $heading-font-family;
-		color: $color-white;
-		font-size: 1rem;
-		&:hover {
-			color: $color-extremelightblue;
-		}
-	}
-	&__text{
-		background-image: url("../Images/Desktop/magnifying-glass-free-icon-magnifying-glass-icon-11562945594bjpcnqjfko.png");
-		background-position: 0.3rem;
-		background-repeat: no-repeat;
-		background-size: 1.6rem;
-		right: 0px;
-		padding: 0.3rem 0.3rem 0.3rem 2.5rem;
-	}
+  margin-left: $spacing-default;
+  align-items: center;
+  &__item {
+    margin-left: $spacing-default;
+    &:last-child {
+      margin-left: 0.5rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    font-family: $heading-font-family;
+    color: $color-white;
+    font-size: 1rem;
+    &:hover {
+      color: $color-extremelightblue;
+    }
+  }
+  &__text {
+    background-image: url("../Images/Desktop/magnifying-glass-free-icon-magnifying-glass-icon-11562945594bjpcnqjfko.png");
+    background-position: 0.3rem;
+    background-repeat: no-repeat;
+    background-size: 1.6rem;
+    right: 0px;
+    padding: 0.3rem 0.3rem 0.3rem 2.5rem;
+  }
 }
 
 .c-banner {
-	font-family: $maintitle-font-family;
-	color: $color-white;
+  font-family: $maintitle-font-family;
+  color: $color-white;
 
-	background-image: url("../Images/Desktop/Dilude.png");
-	padding: 10rem 0;
-	width: auto;
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover;
+  background-image: url("../Images/Desktop/Dilude.png");
+  padding: 10rem 0;
+  width: auto;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 
-	&__item {
-		text-align: center;
-	}
-	&__title {
-		font-family: $maintitle-font-family;
-		font-size: 6rem;
-		padding-bottom: 5rem;
-	}
-	&__btn {
-		color: white;
-		text-decoration: none;
-		font-size: 2rem;
-		font-family: $heading-font-family;
+  &__item {
+    text-align: center;
+  }
+  &__title {
+    font-family: $maintitle-font-family;
+    font-size: 6rem;
+    padding-bottom: 5rem;
+  }
+  &__btn {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: $heading-font-family;
 
-		background-color: $color-buyitnow;
-		padding: 1rem;
-		border-radius: 50px;
-		box-shadow: 0px 0px 6px 6px $color-buyitnow;
+    background-color: $color-buyitnow;
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 6px $color-buyitnow;
 
     transition-property: background-color, color, box-shadow;
-		&:hover {
-			color: $color-extremelightblue;
-			box-shadow: 0px 0px 6px 6px $color-darkblue;
+    &:hover {
+      color: $color-extremelightblue;
+      box-shadow: 0px 0px 6px 6px $color-darkblue;
       background-color: $color-darkblue;
       transition: $color-darkblue, $color-extremelightblue, box-shadow;
       transition-duration: 0.8s;
-		}
-	}
+    }
+  }
 }
 
 .c-features {
-	background-color: $color-extremelightblue;
-	padding-bottom: 3rem;
-	padding-top: 3rem;
-	padding-right: 2rem;
+  background-color: $color-extremelightblue;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-right: 2rem;
 
-	&__title {
-		font-family: $subtitle-font-family;
-		font-size: 3rem;
-		color: $color-darkblue;
-	}
-	&__text {
-		font-family: $text-font-family;
+  &__title {
+    font-family: $subtitle-font-family;
+    font-size: 3rem;
+    color: $color-darkblue;
+  }
+  &__text {
+    font-family: $text-font-family;
 
-		align-items: center;
-		font-size: 2rem;
-		text-align: center;
-	}
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 .c-cta {
-	background-color: hotpink;
-	background-image: url("../Images/Desktop/BackgroundCTA.png");
-	padding: 6rem;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+  background-color: hotpink;
+  background-image: url("../Images/Desktop/BackgroundCTA.png");
+  padding: 6rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 
 .c-types {
   background-color: $color-typesblue;
   text-align: center;
   color: white;
-  &__title{
+  &__title {
     font-family: $subtitle-font-family;
   }
-
 }
-.c-klachtendienst{
-	background-color: $color-extremelightblue;
-	&__img{
-		margin-top: $spacing-default;
-		min-height: 30rem;
-		background-size: cover;
-		background-position: center center;
-		&--bg1{
-			background-image: url("../Images/Support/depositphotos_19510913-stock-photo-choices-of-a-businessman.png");
-		}
-		&--bg2{
-			background-image: url("../Images/Support/BrightnessContrast5.png");
-		}
-		&--bg3{
-			background-image: url("../Images/Support/waypointnamen.png");
-		}
-		
-	}
-	&__titel{
-		font-family: $subtitle-font-family;
-		text-align: center;
-		font-size: 3rem;
-		color: $color-darkblue;
-	}
-	&__text{
-		&--1{
-			padding: 3rem;
-			margin: auto 0;
-			font-size: 1.2rem;
-			font-family: $text-font-family;
-			text-align: center;
-		}
-		&--2{
-			
-			padding: 3rem;
-			text-align: left;
-			margin: auto 0;
-			font-size: 1.2rem;
-			font-family: $text-font-family;
-		}
-		&--3{
-			padding: 3rem;
-			text-align: center;
-			margin: auto 0;
-			font-size: 1.2rem;
-			font-family: $text-font-family;
-		}
-	
-		
-	}
-	&__button{
-		color: black;
-		text-decoration: underline;
-		&:hover{
-			color: $color-darkblue;
-		}
-	}
-	&__item{
-		background-image: url("../Images/Support/Email.png");
-		background-repeat: no-repeat;
-		background-size: 2rem;
-		
-		
-	}
-	&__openingsuren{
-		text-align: center;
-	}
-	input::placeholder {
-		text-align: center;
-	}
+.c-klachtendienst {
+  background-color: $color-extremelightblue;
+  &__img {
+    margin-top: $spacing-default;
+    min-height: 30rem;
+    background-size: cover;
+    background-position: center center;
+    &--bg1 {
+      background-image: url("../Images/Support/depositphotos_19510913-stock-photo-choices-of-a-businessman.png");
+    }
+    &--bg2 {
+      background-image: url("../Images/Support/BrightnessContrast5.png");
+    }
+    &--bg3 {
+      background-image: url("../Images/Support/waypointnamen.png");
+    }
+  }
+  &__titel {
+    font-family: $subtitle-font-family;
+    text-align: center;
+    font-size: 3rem;
+    color: $color-darkblue;
+  }
+  &__text {
+    &--1 {
+      padding: 3rem;
+      margin: auto 0;
+      font-size: 1.2rem;
+      font-family: $text-font-family;
+      text-align: center;
+    }
+    &--2 {
+      padding: 3rem;
+      text-align: left;
+      margin: auto 0;
+      font-size: 1.2rem;
+      font-family: $text-font-family;
+    }
+    &--3 {
+      padding: 3rem;
+      text-align: center;
+      margin: auto 0;
+      font-size: 1.2rem;
+      font-family: $text-font-family;
+    }
+  }
+  &__button {
+    color: black;
+    text-decoration: underline;
+    &:hover {
+      color: $color-darkblue;
+    }
+  }
+  &__item {
+    background-image: url("../Images/Support/Email.png");
+    background-repeat: no-repeat;
+    background-size: 2rem;
+  }
+  &__openingsuren {
+    text-align: center;
+  }
+  input::placeholder {
+    text-align: center;
+  }
 }
 
 .c-footer {
-	color: $color-white;
-	font-size: 1.2rem;
-	padding-top: 1rem;
-	background-color: $color-lighterblue;
-  
-	&__listitem {
-	}
-	&__list {
-		display: flex;
-		justify-content: left;
-		list-style-type: none;
-		justify-content: space-around;
-	}
+  color: $color-white;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  background-color: $color-lighterblue;
 
-	&__phone {
-		text-align: right;
-	}
-	&__logo {
-		background-image: url("../Images/Desktop/Backgroundlogo.png");
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position-x: 35rem;
-		text-align: center;
-	}
+  &__listitem {
+  }
+  &__list {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+
+  &__phone {
+    text-align: right;
+  }
+  &__logo {
+    background-image: url("../Images/Desktop/Backgroundlogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 35rem;
+    text-align: center;
+  }
+}
+.c-form {
+  &__image {
+  }
 }
 //------------------------------------------------------//
 //bootstrap//
 //------------------------------------------------------//
 .c-card {
-	&__desktop {
-		background-color: transparent;
-		border-color: transparent;
-		color: $color-white;
-    
-	}
+  &__desktop {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-white;
+  }
 
-	&__link {
-		text-decoration: none;
-	}
-  &__types{
+  &__link {
+    text-decoration: none;
+  }
+  &__types {
     border: none;
     background-color: $color-extremelightblue;
-    border-radius: .9375rem;
+    border-radius: 0.9375rem;
     padding: 0 0.5rem;
     margin: 1rem 0rem;
-
   }
-  &__thumbnail{
+  &__thumbnail {
     border: none;
     background-color: transparent;
   }
-  &__button{
+  &__button {
     color: $color-white;
     background-color: $color-lighterblue;
   }
 
-	&:hover{
-		background-color: $color-darkblue;
-	}
-
+  &:hover {
+    background-color: $color-darkblue;
+  }
 }
 
 .c-card__title {
-	font-family: $maintitle-font-family;
-	font-size: 5rem;
+  font-family: $maintitle-font-family;
+  font-size: 5rem;
 }
 
 //------------------------------------------------------//
