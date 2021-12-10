@@ -47,6 +47,8 @@ a {
 	}
 }
 
+
+
 //------------------------------------------------------//
 //OBJECTS//
 //------------------------------------------------------//
@@ -76,9 +78,12 @@ a {
 
 .c-nav {
 	margin-left: $spacing-default;
-
-	li {
+	align-items: center;
+	&__item {
 		margin-left: $spacing-default;
+		&:last-child{
+			margin-left: 0.5rem;	
+		}
 	}
 	&__link {
 		text-decoration: none;
@@ -91,15 +96,12 @@ a {
 	}
 	&__text{
 		background-image: url("../Images/Desktop/magnifying-glass-free-icon-magnifying-glass-icon-11562945594bjpcnqjfko.png");
+		background-position: 0.3rem;
 		background-repeat: no-repeat;
 		background-size: 1.6rem;
 		right: 0px;
-
+		padding: 0.3rem 0.3rem 0.3rem 2.5rem;
 	}
-	input::placeholder { 
-		text-align: center;
-	}
-	
 }
 
 .c-banner {
