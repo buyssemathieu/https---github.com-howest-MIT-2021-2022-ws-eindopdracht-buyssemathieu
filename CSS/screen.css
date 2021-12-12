@@ -13,15 +13,6 @@ nav {
   background-color: #0c618a;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  color: #e3f5ff;
-}
-
 .c-header {
   text-align: center;
   padding: 0.5rem;
@@ -34,8 +25,22 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+.c-header__title {
+  color: white;
+  text-decoration: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.c-header__title:hover {
+  color: #0c4663;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
 .c-header__item {
   color: white;
+  text-decoration: none;
 }
 
 .c-header__title {
@@ -76,6 +81,28 @@ a:hover {
   background-size: 1.6rem;
   right: 0px;
   padding: 0.3rem 0.3rem 0.3rem 2.5rem;
+}
+
+.c-nav__button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#1da9f0), color-stop(#1a9bdc), color-stop(#188ec9), color-stop(#1681b6), to(#1474a4));
+  background-image: linear-gradient(to right, #1da9f0, #1a9bdc, #188ec9, #1681b6, #1474a4);
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-family: "Verdana", sans-serif;
+}
+
+.c-nav__button:hover {
+  background-position: right center;
+}
+
+.c-nav .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .c-banner {
@@ -194,6 +221,26 @@ a:hover {
   background-image: url("../Images/Support/waypointnamen.png");
 }
 
+.c-klachtendienst__button {
+  color: white;
+  background-color: #0c4663;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 3.125rem;
+}
+
+.c-klachtendienst__secondbutton {
+  color: white;
+  text-decoration: none;
+  background-color: #0c4663;
+  padding: 1rem;
+  border-radius: 3.125rem;
+}
+
+.c-klachtendienst__secondbutton:hover {
+  color: #e3f5ff;
+}
+
 .c-klachtendienst__titel {
   font-family: "Rockstar", sans-serif;
   text-align: center;
@@ -225,15 +272,6 @@ a:hover {
   font-family: "Verdana", sans-serif;
 }
 
-.c-klachtendienst__button {
-  color: black;
-  text-decoration: underline;
-}
-
-.c-klachtendienst__button:hover {
-  color: #0c4663;
-}
-
 .c-klachtendienst__item {
   background-image: url("../Images/Support/Email.png");
   background-repeat: no-repeat;
@@ -260,11 +298,104 @@ a:hover {
   text-align: center;
 }
 
+.c-klachtendienst__button {
+  color: white;
+  text-decoration: none;
+}
+
+.c-klachtendienst__button:hover {
+  color: #e3f5ff;
+}
+
+.c-form {
+  margin-top: 2rem;
+}
+
+.c-form__forms {
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .c-form__images {
+    display: none;
+  }
+}
+
+.c-chart {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .c-info .c-info__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-info__title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.c-info__subtitel {
+  text-align: center;
+}
+
+.c-info__listitem {
+  text-align: center;
+  color: black;
+}
+
+.c-info__listitem a {
+  text-decoration: none;
+  color: black;
+}
+
+.c-info__listitem:hover {
+  color: #0c4663;
+}
+
+.c-product {
+  margin: 0;
+}
+
+.c-product__reviews {
+  margin: 0;
+}
+
+.c-product__reviewstars {
+  margin: 0;
+}
+
+.c-product__instock {
+  margin: 0;
+}
+
+.c-product__discount {
+  margin: 0;
+  text-decoration: line-through;
+}
+
+.c-product__price {
+  margin: 0;
+  color: #0c4663;
+}
+
 .c-footer {
   color: white;
   font-size: 1.2rem;
   padding-top: 1rem;
   background-color: #0c618a;
+}
+
+.c-footer__listitem {
+  color: white;
+  text-decoration: none;
 }
 
 .c-footer__list {
@@ -279,6 +410,11 @@ a:hover {
       justify-content: space-around;
 }
 
+.c-footer a {
+  text-decoration: none;
+  color: white;
+}
+
 .c-footer__phone {
   text-align: right;
 }
@@ -289,10 +425,6 @@ a:hover {
   background-repeat: no-repeat;
   background-position-x: 35rem;
   text-align: center;
-}
-
-.c-form {
-  margin-top: 2rem;
 }
 
 .c-card__desktop {
@@ -331,3 +463,4 @@ a:hover {
   font-family: "Dust West", sans-serif;
   font-size: 5rem;
 }
+/*# sourceMappingURL=screen.css.map */

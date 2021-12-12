@@ -13,7 +13,9 @@ $color-lightblue: rgb(29, 169, 240);
 $color-extremelightblue: rgb(227, 245, 255);
 $color-typesblue: rgb(21, 124, 176);
 $color-white: rgb(255, 255, 255);
+$color-black: rgb(0,0,0);
 
+$gradient: linear-gradient(to right, #1da9f0, #1a9bdc, #188ec9, #1681b6, #1474a4);
 $maintitle-font-family: "Dust West", sans-serif;
 $subtitle-font-family: "Rockstar", sans-serif;
 $heading-font-family: "Arial Black", sans-serif;
@@ -39,13 +41,8 @@ nav {
   background-color: $color-lighterblue;
 }
 
-a {
-  text-decoration: none;
-  color: $color-white;
-  &:hover {
-    color: $color-extremelightblue;
-  }
-}
+
+
 
 //------------------------------------------------------//
 //OBJECTS//
@@ -64,9 +61,18 @@ a {
   background-size: 18rem;
   background-position: center;
   background-repeat: no-repeat;
-
+  &__title{
+    color: white;
+    text-decoration: none;
+    transition-property: color;
+    &:hover{
+      color: $color-darkblue;
+      transition-duration: 0.5s;
+    }
+  }
   &__item {
     color: white;
+    text-decoration: none;
   }
   &__title {
     margin-top: 0.5rem;
@@ -100,6 +106,24 @@ a {
     right: 0px;
     padding: 0.3rem 0.3rem 0.3rem 2.5rem;
   }
+  &__button{
+    background-image: $gradient;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    transition: 0.5s;
+    background-size: 200% auto;
+    font-family: $text-font-family;
+    &:hover {
+      background-position: right center;
+    }
+  }
+  .btn:focus{
+    box-shadow: none;
+    
+    
+  } 
 }
 
 .c-banner {
@@ -179,7 +203,9 @@ a {
   &__title {
     font-family: $subtitle-font-family;
   }
+
 }
+
 .c-klachtendienst {
   background-color: $color-extremelightblue;
   &__img {
@@ -195,6 +221,25 @@ a {
     }
     &--bg3 {
       background-image: url("../Images/Support/waypointnamen.png");
+    }
+  }
+  &__button{
+    color: $color-white; 
+    background-color: $color-darkblue;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 3.125rem
+    
+  }
+  &__secondbutton{
+    color: $color-white;
+    text-decoration: none;
+    background-color: $color-darkblue;
+    padding: 1rem;
+    border-radius: 3.125rem;
+    
+    &:hover{
+      color: $color-extremelightblue;
     }
   }
   &__titel {
@@ -226,13 +271,7 @@ a {
       font-family: $text-font-family;
     }
   }
-  &__button {
-    color: black;
-    text-decoration: underline;
-    &:hover {
-      color: $color-darkblue;
-    }
-  }
+
   &__item {
     background-image: url("../Images/Support/Email.png");
     background-repeat: no-repeat;
@@ -245,6 +284,99 @@ a {
     text-align: center;
   }
 }
+.c-klachtendienst__button{
+  color: $color-white;
+  text-decoration: none;
+  &:hover{
+    color: $color-extremelightblue;
+  }
+}
+.c-form{
+  margin-top: 2rem;
+  &__forms{
+    padding:2rem 0;
+  }
+  &__images{
+    @media only screen and (max-width:992px){
+      &{
+        display: none;
+      }
+    }
+  }
+
+}
+.c-chart{
+  margin-top: 1rem;
+  width: 100%;
+}
+.c-info{
+  @media only screen and (max-width:992px){
+    .c-info__item{
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+  }
+  &__title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitel{
+    text-align: center;
+  }
+
+  &__listitem{
+    text-align: center;
+    a{
+      text-decoration: none;
+      color: $color-black;
+    }
+  
+    
+    
+    color: $color-black;
+    &:hover{
+      color:$color-darkblue
+    }
+  }
+}
+
+.c-product{
+  margin: 0;
+  &__reviews{
+    margin: 0;
+  }
+  &__reviewstars{
+    margin: 0;
+  }
+  &__instock{
+    margin: 0;
+  }
+  &__discount{
+    margin: 0;
+    text-decoration: line-through;
+  }
+  &__price{
+    margin: 0;
+    color: $color-darkblue;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-footer {
   color: $color-white;
@@ -253,6 +385,8 @@ a {
   background-color: $color-lighterblue;
 
   &__listitem {
+    color: $color-white;
+    text-decoration: none;
   }
   &__list {
     display: flex;
@@ -260,7 +394,10 @@ a {
     list-style-type: none;
     justify-content: space-around;
   }
-
+  a{
+    text-decoration: none;
+    color: $color-white;
+  }
   &__phone {
     text-align: right;
   }
@@ -271,16 +408,9 @@ a {
     background-position-x: 35rem;
     text-align: center;
   }
+
 }
-.c-form {
-  margin-top: 2rem;
-  &__image {
-  }
-  &__forms {
-  }
-  &__title {
-  }
-}
+
 //------------------------------------------------------//
 //bootstrap//
 //------------------------------------------------------//
@@ -300,6 +430,7 @@ a {
     border-radius: 0.9375rem;
     padding: 0 0.5rem;
     margin: 1rem 0rem;
+
   }
   &__thumbnail {
     border: none;
@@ -319,6 +450,7 @@ a {
   font-family: $maintitle-font-family;
   font-size: 5rem;
 }
+
 
 //------------------------------------------------------//
 //UTILITIES//

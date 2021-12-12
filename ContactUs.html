@@ -13,8 +13,8 @@
     <header class="c-header">
       <div class="container">
         <div class="row">
-          <div class="header__item">
-            <a href="desktop.html#home"><h1>SNOOZER</h1></a>
+          <div class="c-header__item">
+            <a class="c-header__title" href="desktop.html#home"><h1>SNOOZER</h1></a>
           </div>
         </div>
       </div>
@@ -38,11 +38,9 @@
                   <a class="c-nav__link" href="support.html#snoozerservice">Support</a>
                 </li>
                 <li class="c-nav__item">
-                  <a class="c-nav__link" href="support.html#snoozersupport">About us</a>
+                  <a class="c-nav__link" href="AboutUs.html">About us</a>
                 </li>
-                <li class="c-nav__item">
-                  <a href="desktop.html#home" class="c-nav__link">Home</a>
-                </li>
+
                 <li class="c-nav__item">
                   <a class="c-nav__link" href="ContactUs.html#contactus"></a>
                 </li>
@@ -51,7 +49,7 @@
                   <input class="c-nav__text" type="search" placeholder="Search" />
                 </li>
                 <li class="c-nav__item">
-                  <button type="button" class="c-button btn btn-primary">Search</button>
+                  <button type="button" class="c-nav__button btn btn-primary">Search</button>
                 </li>
               </ul>
             </div>
@@ -59,11 +57,11 @@
         </div>
       </div>
     </nav>
-    <section class="c-form" id="aboutus">
+    <section class="c-form" id="contactus">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <img src="./Images/AboutUs/pexelspaveldanilyuk658436.jpg" width="500" height="700" alt="Customer support smiling">
+            <img class="c-form__images"src="./Images/AboutUs/pexelspaveldanilyuk658436.jpg" width="400" height="600" alt="Customer support smiling">
           </div>
           <div class="c-form__forms col-lg-6">
             <h1 class="c-form__title">Contact Us</h1>
@@ -88,12 +86,52 @@
               <textarea class="form-control" style="font-style: italic" id="exampleFormControlTextarea5" placeholder="Uw Bericht" rows="3"></textarea>
             </div>
             <div class="mb-3 c-form__list">
-              <form action="/action_page.php" method="post">
-                <button type="button" class="btn btn-primary c-form__button" >Verzenden</button>
-              </form>
+              
+              <button type="button"class="btn btn-primary c-form__button" >Verzenden</button>
+              
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <iframe class="c-chart col-lg-12" width="1920" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=Rue%20dupr%C3%A9%201000%20brussel&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    <section class="c-info" id="info">
+      <div class="container">
+        <div class="row">
+          <div class="c-info__title">
+            <h1 class="text-center">Contact us</h1>
+          </div>
+          <div class="c-info__item col-lg-4 flex-column flex-lg-row d-flex justify-content-center">
+            <img class="c-info__image" src="Images/Contactus/493-4933301_phone-icon-clipart-telephone-png-transparent-png.png" width="40" height="60" alt="Phone">
+            <div class="c-info__list">
+              <h2 class="c-info__subtitel">Telephone</h2>
+              <p class="c-info__listitem">
+                <a href="tel:+32497423928">+32 497 42 39 28</a><br>
+                <a  href="tel:+32240986419">+32 240 98 64 19</a>
+              </p>
             </div>
           </div>
-          <iframe width="1920" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=neerwielkesetraat%2013&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
+          <div class="c-info__item col-lg-4 flex-column flex-lg-row d-flex justify-content-center">
+            <img class="c-info__image" src="Images/Contactus/493-4933301_phone-icon-clipart-telephone-png-transparent-png.png" width="40" height="60" alt="Phone">
+            <div class="c-info__list">
+              <h2 class="c-info__subtitel">Telephone</h2>
+              <p class="c-info__listitem">
+                <a href="mailto:snoozer@gmail.com">snoozer@gmail.com</a><br>
+                <a href="mailto:snoozersupport@gmail.com">snoozersupport@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="c-info__item col-lg-4 flex-column flex-lg-row d-flex justify-content-center">
+            <img src="Images/Contactus/12-124498_collection-of-free-addressed-address-download-on-address.png" width="60" height="60" alt="Map Icon">
+            <div class="c-info__list">
+              <h2 class="c-info__subtitel">Route</h2>
+              <p class="c-info__listitem">
+                Rue dupré 451 1000 Brussel <br>
+                Neerwielkestraat 13 8851 Koolskamp
+
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
