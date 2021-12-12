@@ -398,10 +398,13 @@ nav {
   padding: 3rem 0;
   
   &__maintitle{
-    background-color: hotpink;
     font-size: 2rem;
     color: $color-darkblue;
   }
+  &__cards{
+    color: $color-white;
+  }
+
   &__title{
     text-decoration: underline;
   }

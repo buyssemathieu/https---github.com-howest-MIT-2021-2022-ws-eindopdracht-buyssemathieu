@@ -424,9 +424,12 @@ nav {
 }
 
 .c-addons__maintitle {
-  background-color: hotpink;
   font-size: 2rem;
   color: #0c4663;
+}
+
+.c-addons__cards {
+  color: white;
 }
 
 .c-addons__title {
