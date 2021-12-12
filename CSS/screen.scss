@@ -22,6 +22,8 @@ $heading-font-family: "Arial Black", sans-serif;
 $text-font-family: "Verdana", sans-serif;
 
 $spacing-default: 2rem;
+
+$font-size-big-items:1.5rem;
 //------------------------------------------------------//
 //TOOLS//
 //------------------------------------------------------//
@@ -121,8 +123,7 @@ nav {
   }
   .btn:focus{
     box-shadow: none;
-    
-    
+
   } 
 }
 
@@ -344,14 +345,22 @@ nav {
 }
 
 .c-product{
-  margin: 0;
+  margin-top: 2rem;
+  &__name{
+    font-size: 2rem;
+    font-family: $heading-font-family;
+  }
   &__reviews{
     margin: 0;
   }
   &__reviewstars{
     margin: 0;
   }
+  &__reviewcount{
+    
+  }
   &__instock{
+    color: red;
     margin: 0;
   }
   &__discount{
@@ -359,8 +368,42 @@ nav {
     text-decoration: line-through;
   }
   &__price{
-    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-family: $heading-font-family;
+    font-size: $font-size-big-items;
     color: $color-darkblue;
+    font-weight: 100;
+  }
+  &__button{
+    padding: 0 4rem;
+    font-family: $heading-font-family;
+    font-weight: 100;
+    font-size: $font-size-big-items;
+    background-image: $gradient;
+    text-align: center;
+    transition: 1s;
+    background-size: 200% auto;
+    &:hover {
+      background-position: right center;
+    }
+    &:focus{
+      box-shadow: none;
+  
+    } 
+  }
+}
+.c-addons{
+  background-color: $color-extremelightblue;
+  padding: 3rem 0;
+  
+  &__maintitle{
+    background-color: hotpink;
+    font-size: 2rem;
+    color: $color-darkblue;
+  }
+  &__title{
+    text-decoration: underline;
   }
 }
 
