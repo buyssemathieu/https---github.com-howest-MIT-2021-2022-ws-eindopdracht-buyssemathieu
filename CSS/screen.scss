@@ -206,6 +206,15 @@ nav {
   }
 
 }
+.c-typeslist{
+  &__vacuum{
+    text-decoration: none;
+    color: $color-black;
+    &:hover{
+      color: $color-darkblue;
+    }
+  }
+}
 
 .c-klachtendienst {
   background-color: $color-extremelightblue;
@@ -359,9 +368,13 @@ nav {
   &__reviewcount{
     
   }
-  &__instock{
+  &__outofstock{
     color: red;
     margin: 0;
+  }
+  &__instock{
+    color: green;
+    margin:0;
   }
   &__discount{
     margin: 0;
@@ -376,6 +389,7 @@ nav {
     font-weight: 100;
   }
   &__button{
+    margin-bottom: 2rem;
     padding: 0 4rem;
     font-family: $heading-font-family;
     font-weight: 100;
@@ -395,17 +409,30 @@ nav {
 }
 .c-addons{
   background-color: $color-extremelightblue;
-  padding: 3rem 0;
+  padding: 1rem 0;
   
   &__maintitle{
     font-size: 2rem;
     color: $color-darkblue;
   }
-  &__cards{
+  &__dark{
     color: $color-white;
   }
 
   &__title{
+    text-decoration: underline;
+  }
+}
+.c-score{
+  margin-top: 3rem;
+  &__number{
+
+  }
+  &__scorenumber{
+    font-weight: 400;
+    font-size: 6rem;
+  }
+  &__reviewdate{
     text-decoration: underline;
   }
 }
@@ -478,6 +505,7 @@ nav {
     margin: 1rem 0rem;
 
   }
+
   &__thumbnail {
     border: none;
     background-color: transparent;
@@ -491,7 +519,12 @@ nav {
     background-color: $color-darkblue;
   }
 }
-
+.c-typeslist .container .row .c-card__types .card-footer{
+  border-color: transparent;
+  background-color: transparent;
+  margin: 0;
+  
+}
 .c-card__title {
   font-family: $maintitle-font-family;
   font-size: 5rem;

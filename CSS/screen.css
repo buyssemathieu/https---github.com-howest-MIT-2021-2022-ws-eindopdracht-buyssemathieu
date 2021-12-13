@@ -198,6 +198,15 @@ nav {
   font-family: "Rockstar", sans-serif;
 }
 
+.c-typeslist__vacuum {
+  text-decoration: none;
+  color: black;
+}
+
+.c-typeslist__vacuum:hover {
+  color: #0c4663;
+}
+
 .c-klachtendienst {
   background-color: #e3f5ff;
 }
@@ -377,8 +386,13 @@ nav {
   margin: 0;
 }
 
-.c-product__instock {
+.c-product__outofstock {
   color: red;
+  margin: 0;
+}
+
+.c-product__instock {
+  color: green;
   margin: 0;
 }
 
@@ -397,6 +411,7 @@ nav {
 }
 
 .c-product__button {
+  margin-bottom: 2rem;
   padding: 0 4rem;
   font-family: "Arial Black", sans-serif;
   font-weight: 100;
@@ -420,7 +435,7 @@ nav {
 
 .c-addons {
   background-color: #e3f5ff;
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 
 .c-addons__maintitle {
@@ -428,11 +443,24 @@ nav {
   color: #0c4663;
 }
 
-.c-addons__cards {
+.c-addons__dark {
   color: white;
 }
 
 .c-addons__title {
+  text-decoration: underline;
+}
+
+.c-score {
+  margin-top: 3rem;
+}
+
+.c-score__scorenumber {
+  font-weight: 400;
+  font-size: 6rem;
+}
+
+.c-score__reviewdate {
   text-decoration: underline;
 }
 
@@ -507,6 +535,12 @@ nav {
 
 .c-card:hover {
   background-color: #0c4663;
+}
+
+.c-typeslist .container .row .c-card__types .card-footer {
+  border-color: transparent;
+  background-color: transparent;
+  margin: 0;
 }
 
 .c-card__title {
