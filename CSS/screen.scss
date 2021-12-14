@@ -90,6 +90,13 @@ nav {
     &:last-child {
       margin-left: 0.5rem;
     }
+    &--search{
+      margin-left: 0.5rem;
+      @media only screen and (min-width:992px) {
+        
+        margin-left: 30rem;
+      }
+    }
   }
   &__link {
     text-decoration: none;
@@ -124,7 +131,8 @@ nav {
   .btn:focus{
     box-shadow: none;
 
-  } 
+  }
+
 }
 
 .c-banner {

@@ -63,6 +63,16 @@ nav {
   margin-left: 0.5rem;
 }
 
+.c-nav__item--search {
+  margin-left: 0.5rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .c-nav__item--search {
+    margin-left: 30rem;
+  }
+}
+
 .c-nav__link {
   text-decoration: none;
   font-family: "Arial Black", sans-serif;
@@ -547,4 +557,3 @@ nav {
   font-family: "Dust West", sans-serif;
   font-size: 5rem;
 }
-/*# sourceMappingURL=screen.css.map */
